@@ -1,21 +1,29 @@
-<<<<<<< HEAD
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**How to run the program**
+Install the dependencies using `npm install`, then start the application with `npm run dev`. The system can be accessed in a browser at `http://localhost:5173`.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Assumptions and trade-offs**
+This application was built as a frontend-only prototype using mock data, with no backend integration. Charge IDs are assumed to be system-generated and are not editable to prevent mistakes. Local React state and Bootstrap were used to keep the project simple and focused on user experience rather than infrastructure.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# SwimSchoolSystem
-Task from company, React + Vite Swim School System
->>>>>>> 7ac6bbf6407e5578c4ec7efb5c8e12932bef1fa8
+**Future improvements**
+With more time, the system would be connected to a backend for persistent data, include proper authentication, and add features like validation, search, and pagination. Automated testing would also be introduced to improve reliability.
+
+---
+
+**Preventing common admin mistakes**
+Non-technical users may accidentally edit charge IDs, delete records unintentionally, or enter incorrect amounts. The UI helps prevent this by making charge IDs read-only, using clear labels and input types, and requiring confirmation before deleting any charge.
+
+---
+
+**Delete interaction design**
+A confirmation prompt is shown before deleting a charge to ensure the action is intentional. This extra step reduces the risk of accidental data loss and improves overall system safety.
+
+---
+
